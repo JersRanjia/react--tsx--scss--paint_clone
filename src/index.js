@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import MyCanvas from "./MyCanvas";
+// import {MyCanvas} from "./MyCanvas";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <MyCanvas />,
   document.getElementById('root')
 );
 
