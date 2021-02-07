@@ -4,10 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import MyCanvas from "./MyCanvas";
+import {Slider} from "./Slider";
 // import {MyCanvas} from "./MyCanvas";
 
 ReactDOM.render(
-  <MyCanvas />,
+  <Slider />,
   document.getElementById('root')
 );
 

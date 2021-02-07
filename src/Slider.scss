@@ -1,0 +1,50 @@
+.slider-container {
+
+  background: pink;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &>* {
+
+    position: absolute;
+
+  }
+
+  .slider-circle {
+
+    $slider_circle_radius:30px ;
+
+    display: block;
+    margin: auto;
+    background: #343434;
+    width: $slider_circle_radius;
+    height: $slider_circle_radius;
+    border: none;
+    border-radius: $slider_circle_radius;
+
+    &:hover {
+      background: #464646;
+      cursor: pointer;
+    }
+
+  }
+
+  .slider-line {
+
+    width: 200px;
+    background: #939393;
+    height: 2px;
+
+  }
+
+}
+
+
+
+
