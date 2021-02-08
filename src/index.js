@@ -2,30 +2,9 @@ import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import MyCanvas from "./MyCanvas";
-// import {Slider} from "./Slider";
-// import {StrokeSizeController} from "./StrokeSizeController";
-// import ReactSlider from "react-slider";
-// import Slider from '@material-ui/core/Slider';
-// import Typography from "@material-ui/core/Typography/Typography";
-// import { ColorPicker } from 'material-ui-color';
-import ColorPicker from "react-pick-color";
 import {Main} from "./Main";
-import Footer from "./Footer"; // nicenice
+import Footer from "./Footer";
 
-// const Poins = () => {
-//     const [color, setColor] = useState("#fff");
-//
-//     return (
-//         <ColorPicker
-//             color={color}
-//             onChange={(color) => {
-//                 setColor(color.hex) ;
-//                 console.log(color.hex) ;
-//             }}
-//         />
-//     );
-// };
 
 ReactDOM.render(
     <Main />,

@@ -44,10 +44,10 @@ console.log("ici:" + props.strokeColor)
         const context = canvas?.getContext("2d");
         if (context == null) return ;
 
-        // context.lineCap = "round"
-        // context.strokeStyle = "black"
-        // context.lineWidth = 5 ;
-        [context.lineCap, context.strokeStyle, context.lineWidth] = ["round", props.strokeColor, props.lineWidth]
+        context.lineCap = "round" ;
+        context.strokeStyle = props.strokeColor ;
+        context.lineWidth = props.lineWidth ;
+
         contextRef.current = context ;
 
         if (!contextRef.current) alert("erreur useEffect" )
