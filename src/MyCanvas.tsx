@@ -1,6 +1,6 @@
 import * as React from "react";
 import {MouseEvent, useEffect, useRef, useState} from "react";
-import {log} from "util";
+import "./MyCanvas.css"
 
 interface MyCanvasProps {
     strokeColor: string;
@@ -28,8 +28,14 @@ console.log("ici:" + props.strokeColor)
         if (!canvas) return ;
 
         if (isInitiating) {
-            canvas.width = window.innerWidth ;
-            canvas.height = window.innerHeight;
+            let parentElement = canvas.parentElement;
+            if (parentElement) {
+
+                canvas.width = parentElement.clientWidth;
+                canvas.height = parentElement.clientHeight ;
+            }
+            // canvas.width = window.innerWidth ;
+            // canvas.height = window.innerHeight;
             canvas.style.border = "solid black 1px";
             // canvas.style.background = "blue" ;
         }
@@ -85,7 +91,7 @@ console.log("ici:" + props.strokeColor)
     };
 
     return (
-        <div>
+        <div className="canvas-container" >
             <canvas
                 onMouseDown={startDrawing}
                 onMouseUp={finishDrawing}

@@ -11,7 +11,8 @@ import MyCanvas from "./MyCanvas";
 // import Typography from "@material-ui/core/Typography/Typography";
 // import { ColorPicker } from 'material-ui-color';
 import ColorPicker from "react-pick-color";
-import {Main} from "./Main"; // nicenice
+import {Main} from "./Main";
+import Footer from "./Footer"; // nicenice
 
 // const Poins = () => {
 //     const [color, setColor] = useState("#fff");
@@ -31,6 +32,11 @@ ReactDOM.render(
     <Main />,
     document.getElementById('root')
 );
+
+ReactDOM.render(
+    <Footer/>,
+    document.getElementsByTagName('footer')[0]
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
