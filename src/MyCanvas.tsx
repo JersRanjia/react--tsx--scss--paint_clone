@@ -37,7 +37,7 @@ console.log("ici:" + props.strokeColor)
             // canvas.width = window.innerWidth ;
             // canvas.height = window.innerHeight;
             canvas.style.border = "solid black 1px";
-            // canvas.style.background = "blue" ;
+            canvas.style.background = "white" ;
         }
 
 

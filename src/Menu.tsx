@@ -16,6 +16,7 @@ interface MenuState {
 
     sliderValue: number
     colorValue: string
+    isEraser:boolean
 
 }
 
@@ -26,7 +27,8 @@ class Menu extends Component<MenuProps, MenuState> {
 
         this.state = {
             sliderValue:5,
-            colorValue:"#000000"
+            colorValue:"#000000",
+            isEraser:false
         }
 
     }
@@ -56,7 +58,6 @@ class Menu extends Component<MenuProps, MenuState> {
             this.props.afterColorChangeValue(new_value) ;
 
     };
-
 
     render() {
 

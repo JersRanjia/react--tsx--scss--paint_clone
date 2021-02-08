@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import MyCanvas from "./MyCanvas";
 // import {Slider} from "./Slider";
