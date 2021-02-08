@@ -25,4 +25,5 @@ yarn-error.log*
 #jers
 .gitignore
 .idea/
+trash
 paint-clone.iml
