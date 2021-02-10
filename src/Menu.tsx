@@ -1,6 +1,6 @@
 import React, {ChangeEvent, Component} from "react";
 import Slider from '@material-ui/core/Slider';
-import "./Menu.css"
+import "./Menu.scss"
 import ColorPicker from "react-pick-color";
 
 interface MenuProps {

@@ -1,7 +1,7 @@
 import * as React from "react";
 import Menu from "./Menu" ;
 import MyCanvas from "./MyCanvas";
-import "./Main.css"
+import "./Main.scss"
 
 interface MainProp {
 

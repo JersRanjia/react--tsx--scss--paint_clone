@@ -1,6 +1,6 @@
 import * as React from "react";
 import {MouseEvent, useEffect, useRef, useState} from "react";
-import "./MyCanvas.css"
+import "./MyCanvas.scss"
 
 interface MyCanvasProps {
     strokeColor: string;
